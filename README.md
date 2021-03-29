@@ -1,0 +1,2 @@
+# addChild
+別のViewControllerのViewを使う方法を練習したプロジェクト
