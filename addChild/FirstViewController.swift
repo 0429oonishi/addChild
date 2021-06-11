@@ -11,7 +11,6 @@ final class FirstViewController: UIViewController {
 
     @IBOutlet private weak var firstView: UIView!
     
-
     @IBAction private func secondVCButtonDidTapped(_ sender: Any) {
         firstView.subviews.forEach { $0.removeFromSuperview() }
         let secondVC = storyboard?.instantiateViewController(identifier: "SecondViewController") as! SecondViewController
@@ -27,7 +26,7 @@ final class FirstViewController: UIViewController {
         firstView.addSubview(thirdVC.view)
         thirdVC.didMove(toParent: self)
     }
-
+    
 }
 
 

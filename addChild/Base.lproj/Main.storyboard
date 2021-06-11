@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -20,49 +20,48 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ait-aN-t9z">
-                                <rect key="frame" x="50" y="762" width="100" height="50"/>
-                                <color key="backgroundColor" systemColor="systemTealColor"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="eQr-th-2sd">
+                                <rect key="frame" x="50" y="752" width="314" height="60"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ait-aN-t9z">
+                                        <rect key="frame" x="0.0" y="0.0" width="132" height="60"/>
+                                        <color key="backgroundColor" systemColor="systemTealColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                        <state key="normal" title="ThirdVC">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="secondVCButtonDidTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mvd-d1-QZr"/>
+                                            <action selector="thirdVCButtonDidTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aS6-hF-MMi"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iK6-R0-fSC">
+                                        <rect key="frame" x="182" y="0.0" width="132" height="60"/>
+                                        <color key="backgroundColor" systemColor="systemPinkColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                        <state key="normal" title="SecondVC">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="secondVCButtonDidTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qNA-iR-aGn"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="Eh9-2U-5pf"/>
-                                    <constraint firstAttribute="width" constant="100" id="Tcv-TA-W7H"/>
+                                    <constraint firstAttribute="height" constant="60" id="U6W-2H-WdU"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
-                                <state key="normal" title="ThirdVC">
-                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <connections>
-                                    <action selector="secondVCButtonDidTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mvd-d1-QZr"/>
-                                    <action selector="thirdVCButtonDidTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aS6-hF-MMi"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iK6-R0-fSC">
-                                <rect key="frame" x="264" y="762" width="100" height="50"/>
-                                <color key="backgroundColor" systemColor="systemPinkColor"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="Ify-id-8E3"/>
-                                    <constraint firstAttribute="width" constant="100" id="hDh-FV-tBa"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
-                                <state key="normal" title="SecondVC">
-                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <connections>
-                                    <action selector="secondVCButtonDidTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qNA-iR-aGn"/>
-                                </connections>
-                            </button>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="BTy-tB-Jyl" secondAttribute="trailing" id="7JE-Ox-sof"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="eQr-th-2sd" secondAttribute="bottom" constant="50" id="97v-nI-1fM"/>
                             <constraint firstItem="BTy-tB-Jyl" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="DmD-N0-1mb"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="iK6-R0-fSC" secondAttribute="trailing" constant="50" id="F2b-Kt-Tkc"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="iK6-R0-fSC" secondAttribute="bottom" constant="50" id="S2u-jE-NSj"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="ait-aN-t9z" secondAttribute="bottom" constant="50" id="UaO-Gw-z4c"/>
+                            <constraint firstItem="eQr-th-2sd" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="YuI-5S-jpz"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="eQr-th-2sd" secondAttribute="trailing" constant="50" id="kKK-v6-Hqk"/>
                             <constraint firstAttribute="bottom" secondItem="BTy-tB-Jyl" secondAttribute="bottom" id="mEi-Ow-Jpt"/>
                             <constraint firstItem="BTy-tB-Jyl" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="pB4-Rc-9c2"/>
-                            <constraint firstItem="ait-aN-t9z" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="u8f-th-v1h"/>
                         </constraints>
                     </view>
                     <connections>

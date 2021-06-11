@@ -62,10 +62,10 @@
 			children = (
 				AB74CFE1260EAA2600C429D9 /* AppDelegate.swift */,
 				AB74CFE3260EAA2600C429D9 /* SceneDelegate.swift */,
+				AB74CFE7260EAA2600C429D9 /* Main.storyboard */,
 				AB74CFE5260EAA2600C429D9 /* FirstViewController.swift */,
 				AB74CFF6260EAA8A00C429D9 /* SecondViewController.swift */,
 				AB74CFFA260EAFD700C429D9 /* ThirdViewController.swift */,
-				AB74CFE7260EAA2600C429D9 /* Main.storyboard */,
 				AB74CFEA260EAA2A00C429D9 /* Assets.xcassets */,
 				AB74CFEC260EAA2A00C429D9 /* LaunchScreen.storyboard */,
 				AB74CFEF260EAA2A00C429D9 /* Info.plist */,
