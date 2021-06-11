@@ -17,8 +17,11 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BTy-tB-Jyl">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <rect key="frame" x="0.0" y="298" width="414" height="300"/>
+                                <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="300" id="eFH-cQ-YFh"/>
+                                </constraints>
                             </view>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="eQr-th-2sd">
                                 <rect key="frame" x="50" y="752" width="314" height="60"/>
@@ -55,13 +58,12 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="BTy-tB-Jyl" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="6lK-rM-Y3f"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="BTy-tB-Jyl" secondAttribute="trailing" id="7JE-Ox-sof"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="eQr-th-2sd" secondAttribute="bottom" constant="50" id="97v-nI-1fM"/>
                             <constraint firstItem="BTy-tB-Jyl" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="DmD-N0-1mb"/>
                             <constraint firstItem="eQr-th-2sd" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="YuI-5S-jpz"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="eQr-th-2sd" secondAttribute="trailing" constant="50" id="kKK-v6-Hqk"/>
-                            <constraint firstAttribute="bottom" secondItem="BTy-tB-Jyl" secondAttribute="bottom" id="mEi-Ow-Jpt"/>
-                            <constraint firstItem="BTy-tB-Jyl" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="pB4-Rc-9c2"/>
                         </constraints>
                     </view>
                     <connections>
@@ -136,6 +138,9 @@
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemPinkColor">
             <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

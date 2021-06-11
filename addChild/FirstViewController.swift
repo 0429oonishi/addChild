@@ -15,8 +15,14 @@ final class FirstViewController: UIViewController {
         firstView.subviews.forEach { $0.removeFromSuperview() }
         let secondVC = storyboard?.instantiateViewController(identifier: "SecondViewController") as! SecondViewController
         self.addChild(secondVC)
+        secondVC.view.translatesAutoresizingMaskIntoConstraints = false
         firstView.addSubview(secondVC.view)
         secondVC.didMove(toParent: self)
+        NSLayoutConstraint.activate([
+            secondVC.view.centerXAnchor.constraint(equalTo: self.view.centerXAnchor),
+            secondVC.view.centerYAnchor.constraint(equalTo: self.view.centerYAnchor),
+        ])
+        firstView.backgroundColor = .systemPink
     }
     
     @IBAction private func thirdVCButtonDidTapped(_ sender: Any) {
